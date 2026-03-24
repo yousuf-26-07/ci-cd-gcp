@@ -13,7 +13,7 @@
     <p><b>Roll Number:</b> <span id="roll"></span></p>
 
     <script>
-        fetch('http://34.46.211.59/student-details')
+        fetch('http://34.46.211.59:5000/student-details')
             .then(res => res.json())
             .then(data => {
                 document.getElementById('name').innerText = data.name;
